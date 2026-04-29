@@ -25,3 +25,10 @@ The notebook includes:
 7. Test model.
 8. Upload image and predict character.
 9. Save trained model weights.
+
+## Project structure
+
+- `constants.py`: shared constants and paths.
+- `data_utils.py`: dataset download, folder discovery, in-memory splits, and tf.data builders.
+- `model_utils.py`: CNN model factory and architecture text helper.
+- `inference_utils.py`: face detection/cropping and single-image preprocessing helpers.
