@@ -1,7 +1,7 @@
 ANN/CNN structure used in this project:
 
 Input: 128x128x3 RGB image
--> Rescaling(1/255)
+-> Input normalization in tf.data pipeline (pixel / 255)
 -> Conv2D(32, 3x3, relu)
 -> MaxPooling2D(2x2)
 -> Conv2D(64, 3x3, relu)
