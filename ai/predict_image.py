@@ -64,11 +64,12 @@ def predict(image_path: Path):
     probs = model.predict(arr, verbose=0)[0]
     pred_idx = int(np.argmax(probs))
     top_indices = np.argsort(probs)[::-1][: min(3, len(probs))]
+    serializable_bbox = tuple(int(v) for v in bbox) if bbox is not None else None
 
     return {
         "input_image": str(image_path.resolve()),
         "model_path": str(model_path.resolve()),
-        "face_bbox": bbox,
+        "face_bbox": serializable_bbox,
         "predicted_character": class_names[pred_idx],
         "confidence": float(probs[pred_idx]),
         "top_predictions": [
