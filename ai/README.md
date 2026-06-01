@@ -8,6 +8,8 @@ The notebook downloads the dataset using:
 
 `kagglehub.dataset_download("anuragraj03/anime-face-dataset")`
 
+Or check it in [Kaggle](https://www.kaggle.com/datasets/anuragraj03/anime-face-dataset)
+
 Each character folder in the downloaded dataset is used as the class label.
 
 ## Run in Google Colab
