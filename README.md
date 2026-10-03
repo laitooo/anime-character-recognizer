@@ -4,7 +4,7 @@ Anime Character Recognizer is a small AI project that predicts which anime chara
 
 It has two parts:
 
-- `ai/`: training and inference code using a TensorFlow ANN model.
+- `ai/`: training and inference code using a TensorFlow CNN (convolutional neural network) model.
 - `website/`: a Next.js + TypeScript single-page web app for image upload and prediction display.
 
 ## Screenshot
@@ -13,7 +13,7 @@ It has two parts:
 
 ## Project Idea
 
-1. Train an ANN model on anime face images, where each folder name is a character class.
+1. Train a CNN model on anime face images, where each folder name is a character class.
 2. Save trained model artifacts in `ai/artifacts/model`.
 3. Upload an image in the website UI.
 4. The website API route calls Python inference (`ai/predict_image.py`).

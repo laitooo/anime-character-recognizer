@@ -1,6 +1,6 @@
 # Anime Character Classifier (Notebook-Only)
 
-This project trains a neural network to classify anime character images downloaded with `kagglehub`.
+This project trains a convolutional neural network (CNN) to classify anime character images downloaded with `kagglehub`.
 
 ## Dataset source
 
@@ -22,7 +22,7 @@ The notebook includes:
 2. Read input dataset.
 3. Split into train/validation/test variables (in memory).
 4. Create model.
-5. Create ANN structure text.
+5. Create CNN structure text.
 6. Train model.
 7. Test model.
 8. Upload image and predict character.

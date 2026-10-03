@@ -2,7 +2,7 @@
 
 Single-page Next.js (TypeScript) app that uploads an anime image and predicts the character.
 
-The UI is implemented in Next.js, and the API route runs `../ai/predict_image.py` so it uses your saved ANN model from `../ai/artifacts/model`.
+The UI is implemented in Next.js, and the API route runs `../ai/predict_image.py` so it uses your saved CNN model from `../ai/artifacts/model`.
 
 ## Requirements
 
