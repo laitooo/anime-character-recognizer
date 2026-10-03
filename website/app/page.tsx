@@ -61,7 +61,7 @@ export default function HomePage() {
   return (
     <main className="container">
       <h1>Anime Character Recognizer</h1>
-      <p>Upload an anime image and identify the character with your trained ANN model.</p>
+      <p>Upload an anime image and identify the character with your trained CNN model.</p>
 
       <form className="form" onSubmit={handleSubmit}>
         <input
