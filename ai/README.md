@@ -23,10 +23,10 @@ The notebook includes:
 3. Split into train/validation/test variables (in memory).
 4. Create model.
 5. Create CNN structure text.
-6. Train model.
-7. Test model.
-8. Upload image and predict character.
-9. Save trained model weights.
+6. Load a saved model if one exists (optional; otherwise starts fresh).
+7. Train model, saving `best_model.keras` and `final_model.keras`.
+8. Test model.
+9. Upload image and predict character.
 
 ## Notebook structure
 
