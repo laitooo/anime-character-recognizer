@@ -1,0 +1,16 @@
+CNN structure used in this project:
+
+Input: 128x128x3 RGB image
+-> Input normalization in tf.data pipeline (pixel / 255)
+-> Data augmentation (training only): RandomFlip(horizontal), RandomRotation(0.08),
+   RandomZoom(0.1), RandomTranslation(0.08), RandomContrast(0.15)
+-> Conv block 32:  [Conv2D(3x3, same) -> BatchNorm -> ReLU] x2 -> MaxPooling2D(2x2)
+-> Conv block 64:  [Conv2D(3x3, same) -> BatchNorm -> ReLU] x2 -> MaxPooling2D(2x2)
+-> Conv block 128: [Conv2D(3x3, same) -> BatchNorm -> ReLU] x2 -> MaxPooling2D(2x2)
+-> SpatialDropout2D(0.1)
+-> Conv block 256: [Conv2D(3x3, same) -> BatchNorm -> ReLU] x2 -> MaxPooling2D(2x2)
+-> GlobalAveragePooling2D
+-> Dropout(0.4)
+-> Dense(256, relu)
+-> Dropout(0.4)
+-> Dense(num_classes, softmax)
